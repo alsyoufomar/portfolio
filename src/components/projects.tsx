@@ -1,8 +1,13 @@
 import '../styles/projects.css'
+import { motion } from 'framer-motion'
 
 export const Projects = () => {
   return (
-    <div className='projects'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
+      className='projects'>
       <div className='project'>
         <a
           target='_blank'
@@ -51,6 +56,6 @@ export const Projects = () => {
           <p>JavaScript / HTML / CSS</p>
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 }

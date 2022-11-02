@@ -1,8 +1,13 @@
 import '../styles/home.css'
+import { motion } from 'framer-motion'
 
 export const Home = () => {
   return (
-    <div className='home'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
+      className='home'>
       <p>
         Born in Amman <br />
         Living in London
@@ -15,6 +20,6 @@ export const Home = () => {
         <br />
         Now available for you.
       </p>
-    </div>
+    </motion.div>
   )
 }

@@ -1,8 +1,13 @@
 import '../styles/contact.css'
+import { motion } from 'framer-motion'
 
 export const Contact = () => {
   return (
-    <div className='contact'>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.4 } }}
+      className='contact'>
       <a
         href='https://www.linkedin.com/in/omar-alsyouf-0a478822b/'
         target='_blank'
@@ -26,6 +31,6 @@ export const Contact = () => {
       <a href='mailto:omaralsoyouf@gmail.com' className='email'>
         | Email
       </a>
-    </div>
+    </motion.div>
   )
 }
