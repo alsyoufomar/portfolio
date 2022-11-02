@@ -1,0 +1,21 @@
+.projects {
+  padding: 2rem;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.project {
+  display: flex;
+  align-items: flex-end;
+  margin: 1rem;
+}
+
+.stack {
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid var(--foreground);
+}

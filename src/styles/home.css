@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  padding: 2rem;
+}
+
+.home p {
+  width: 10em;
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-details);
+  line-height: var(--line-height);
+}
