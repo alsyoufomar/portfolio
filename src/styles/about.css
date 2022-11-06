@@ -1,20 +1,41 @@
 .about {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   justify-content: flex-end;
-  padding: 4rem;
-  padding-top: 15rem;
 }
 
-.about__info {
-  width: 50%;
-
-  display: flex;
-  flex-direction: column;
-}
-
-.about__info div {
+.about__container {
+  max-height: 100vh;
   width: 100%;
+  display: flex;
+}
+
+.about__container div {
   margin: 1rem;
   line-height: var(--line-height);
+}
+
+.about__container > div {
+  padding-top: 12rem;
+}
+
+.about__container div:nth-child(4) {
+  padding-bottom: 3rem;
+}
+
+.test {
+  padding-left: 30%;
+  position: relative;
+}
+
+.track-cover {
+  position: absolute;
+
+  right: calc(1rem + 1px);
+  top: calc(1rem + 1px);
+  bottom: calc(1rem + 1px);
+  width: 1.99rem;
+  background-color: var(--clr-light);
+
+  z-index: 1000;
 }
