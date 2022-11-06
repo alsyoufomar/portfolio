@@ -1,16 +1,26 @@
 import './App.css'
 import { Route, Routes, useLocation } from 'react-router-dom'
+import { useEffect, useState } from 'react'
 import { Nav } from './components/nav'
 import { Home } from './components/home'
 import { About } from './components/about'
 import { Contact } from './components/contact'
 import { Projects } from './components/projects'
+import { Welcome } from './components/welcome'
 import { AnimatePresence } from 'framer-motion'
 
 function App() {
+  const [show, setShow] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setShow(false)
+    }, 7000)
+  }, [])
+
   const location = useLocation()
   return (
     <div className='App'>
+      {show && <Welcome />}
       <div className='profile'>
         <div className='frame'>
           <h1>Omar Alsyouf</h1>
