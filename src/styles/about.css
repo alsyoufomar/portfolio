@@ -8,6 +8,8 @@
   max-height: 100vh;
   width: 100%;
   display: flex;
+
+  margin-right: 2px;
 }
 
 .about__container div {
@@ -35,7 +37,9 @@
   top: calc(1rem + 1px);
   bottom: calc(1rem + 1px);
   width: 1.99rem;
-  background-color: var(--clr-light);
+  background: linear-gradient(var(--cover));
 
   z-index: 1000;
+
+  transition: background-color 1s ease-in-out;
 }

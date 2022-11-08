@@ -30,8 +30,8 @@ export const About = () => {
           <div>
             <h2>Skills</h2>
             <p>
-              JavaScript / ReactJS / TypeScipt / NodeJS / Express / Redux / HTML
-              / CSS / SQL / Prisma / Git / Agile / TDD / OOP / VScode
+              JavaScript / ReactJS / TypeScript / NodeJS / Express / Redux /
+              HTML / CSS / SQL / Prisma / Git / Agile / TDD / OOP / VScode
             </p>
           </div>
           <div>

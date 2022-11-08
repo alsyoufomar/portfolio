@@ -7,17 +7,18 @@ import { About } from './components/about'
 import { Contact } from './components/contact'
 import { Projects } from './components/projects'
 import { Welcome } from './components/welcome'
+import { Stars } from './components/stars'
 import { AnimatePresence } from 'framer-motion'
 
 function App() {
-  const [show, setShow] = useState(true)
+  const location = useLocation()
+  const [show, setShow] = useState<boolean>(true)
   useEffect(() => {
     setTimeout(() => {
       setShow(false)
     }, 7000)
   }, [])
 
-  const location = useLocation()
   return (
     <div className='App'>
       {show && <Welcome />}
@@ -25,6 +26,7 @@ function App() {
         <div className='frame'>
           <h1>Omar Alsyouf</h1>
           <p>Full Stack Developer</p>
+          <Stars />
         </div>
       </div>
       <div className='fake-top'></div>
