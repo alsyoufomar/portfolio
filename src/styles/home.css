@@ -12,3 +12,9 @@
   font-size: var(--fs-details);
   line-height: var(--line-height);
 }
+
+@media only screen and (max-width: 500px) {
+  .home {
+    padding-bottom: 6rem;
+  }
+}

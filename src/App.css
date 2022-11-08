@@ -27,8 +27,8 @@
 
   --frame: #e9e9e9aa;
 
-  --cover: to top, rgb(216, 216, 216) 0%, rgb(220, 220, 220) 50%,
-    rgb(229, 229, 229) 100%;
+  --cover: to top, rgb(217, 217, 217) 0%, rgb(221, 221, 221) 50%,
+    rgb(230, 230, 230) 100%;
 
   --line-height: 1.6;
 }
@@ -136,4 +136,27 @@ body::-webkit-scrollbar {
 .frame p {
   font-size: var(--fs-details);
   font-weight: var(--fw-bold);
+}
+
+@media only screen and (max-width: 1020px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media only screen and (max-height: 500px) {
+  html {
+    font-size: 10px;
+  }
 }

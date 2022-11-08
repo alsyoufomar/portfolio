@@ -43,3 +43,21 @@
 
   transition: background-color 1s ease-in-out;
 }
+
+@media only screen and (max-width: 750px) {
+  .test {
+    padding-left: 0;
+    position: relative;
+  }
+
+  .about__container {
+    margin-bottom: 6rem;
+    margin-top: 8rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .test {
+    padding-left: 0;
+    position: relative;
+  }
+}

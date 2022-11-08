@@ -20,3 +20,31 @@
 
   transition: color 1s ease-in-out;
 }
+
+@media only screen and (max-width: 500px) {
+  .nav {
+    left: calc(1rem);
+    width: calc(100% - 2rem - 1px);
+    height: 4rem;
+    padding: 0 2rem;
+    bottom: 1rem;
+    font-size: calc(var(--fs-body) + 0.2rem);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border-top: 1px solid var(--foreground); */
+
+    z-index: 1000;
+  }
+
+  .nav::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    left: 2rem;
+    height: 1px;
+    background-color: var(--foreground);
+  }
+}
