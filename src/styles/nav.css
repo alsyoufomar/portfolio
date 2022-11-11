@@ -28,7 +28,7 @@
     height: 4rem;
     padding: 0 2rem;
     bottom: 1rem;
-    font-size: calc(var(--fs-body) + 0.2rem);
+    font-size: var(--fs-body);
 
     display: flex;
     justify-content: space-between;

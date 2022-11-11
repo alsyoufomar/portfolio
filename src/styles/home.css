@@ -1,7 +1,7 @@
 .home {
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  height: 100vh;
 }
 
 .home__container {
@@ -22,15 +22,20 @@
 }
 
 .home p {
-  width: 10em;
+  width: 11em;
   font-weight: var(--fw-bold);
   font-size: var(--fs-details);
   line-height: var(--line-height);
 }
 
 @media only screen and (max-width: 500px) {
-  .home {
+  .home__container {
     padding-bottom: 6rem;
+    justify-content: flex-start;
+  }
+
+  .home p {
+    width: 15rem;
   }
 }
 
