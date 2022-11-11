@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
   height: 100vh;
+
+  border: solid 3px blue;
 }
 
 .home__container {
@@ -15,6 +17,8 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
+  border: solid 3px red;
 }
 
 .home__container::-webkit-scrollbar {
