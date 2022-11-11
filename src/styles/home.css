@@ -1,12 +1,12 @@
 .home {
   display: flex;
   align-items: center;
-  max-height: 100vh;
+  height: 100vh;
 }
 
 .home__container {
   width: 100%;
-  max-height: calc(100vh - 2rem);
+  height: calc(100vh - 2rem);
   padding: 2rem;
 
   display: flex;
