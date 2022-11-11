@@ -1,9 +1,24 @@
 .home {
   display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  height: 100vh;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.home__container {
+  width: 100%;
+  height: calc(100vh - 2rem);
   padding: 2rem;
+
+  display: flex;
+  justify-content: flex-end;
+
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.home__container::-webkit-scrollbar {
+  display: none;
 }
 
 .home p {
@@ -16,5 +31,11 @@
 @media only screen and (max-width: 500px) {
   .home {
     padding-bottom: 6rem;
+  }
+}
+
+@media only screen and (min-height: 300px) {
+  .home__container {
+    align-items: flex-end;
   }
 }

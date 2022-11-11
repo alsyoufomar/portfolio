@@ -133,30 +133,40 @@ body::-webkit-scrollbar {
   transition: border 1s ease-in-out;
 }
 
+.frame h1 {
+  font-size: 4rem;
+}
+
 .frame p {
   font-size: var(--fs-details);
   font-weight: var(--fw-bold);
 }
 
-@media only screen and (max-width: 1020px) {
-  html {
-    font-size: 15px;
+@media only screen and (max-width: 850px) {
+  :root {
+    --fs-h1: 3rem;
+    --fs-body: 0.9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .frame h1 {
+    font-size: var(--fs-h1);
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-height: 600px) {
   html {
     font-size: 13px;
   }
 }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 460px) {
   html {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
-@media only screen and (max-height: 500px) {
+
+@media only screen and (max-height: 350px) {
   html {
-    font-size: 10px;
+    font-size: 11px;
   }
 }

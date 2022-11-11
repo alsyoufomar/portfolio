@@ -17,11 +17,11 @@ export const Nav = () => {
   }
   return (
     <div className='nav'>
+      <i onClick={darkMode} className='fa-solid fa-circle-half-stroke'></i>
       <Link to='/'>Home</Link>
       <Link to='/projects'>Projects</Link>
       <Link to='/contact'>Contact</Link>
       <Link to='/about'>About</Link>
-      <i onClick={darkMode} className='fa-solid fa-circle-half-stroke'></i>
     </div>
   )
 }

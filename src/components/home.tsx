@@ -8,18 +8,20 @@ export const Home = () => {
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0, transition: { duration: 0.4 } }}
       className='home'>
-      <p>
-        Born in Amman <br />
-        Living in London
-        <br />
-        Raised by the 90's
-        <br />
-        Focused on experience, design & well-structured code
-        <br />
-        With programmatical and Mathematical background
-        <br />
-        Now available for you.
-      </p>
+      <div className='home__container'>
+        <p>
+          Born in Amman <br />
+          Living in London
+          <br />
+          Raised by the 90's
+          <br />
+          Focused on experience, design & well-structured code
+          <br />
+          With programmatical and Mathematical background
+          <br />
+          Now available for you.
+        </p>
+      </div>
     </motion.div>
   )
 }
