@@ -31,7 +31,7 @@
 @media only screen and (max-width: 500px) {
   .home__container {
     justify-content: flex-start;
-    height: calc(100vh - 14rem);
+    padding-bottom: 5rem;
   }
 
   .home p {
