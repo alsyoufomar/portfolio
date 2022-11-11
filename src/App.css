@@ -100,7 +100,7 @@ body {
   color: var(--foreground);
   font-family: var(--ff-sec);
   line-height: var(--line-height-2);
-  max-height: 100vh;
+  height: 100vh;
 
   -ms-overflow-style: none;
   scrollbar-width: none;
