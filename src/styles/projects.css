@@ -1,11 +1,11 @@
 .projects {
-  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
   display: flex;
   align-items: center;
 }
 
 .projects__container {
-  height: calc(100vh - 2rem);
+  height: calc((var(--vh, 1vh) * 100) - 2rem);
   width: 100%;
   padding: 0 2rem;
 
@@ -43,7 +43,7 @@
 
 @media only screen and (max-width: 850px) {
   .projects__container {
-    height: calc(100vh - 14rem);
+    height: calc((var(--vh, 1vh) * 100) - 14rem);
     margin-top: 4rem;
   }
 }

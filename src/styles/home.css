@@ -3,13 +3,10 @@
   align-items: center;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
-
-  border: solid 3px blue;
 }
 
 .home__container {
   width: 100%;
-  /* height: calc(100vh - 2rem); */
   height: calc((var(--vh, 1vh) * 100) - 2rem);
 
   padding: 2rem;
@@ -20,8 +17,6 @@
   overflow-y: scroll;
   -ms-overflow-style: none;
   scrollbar-width: none;
-
-  border: solid 3px red;
 }
 
 .home__container::-webkit-scrollbar {
