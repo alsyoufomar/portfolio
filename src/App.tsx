@@ -11,6 +11,8 @@ import { Stars } from './components/stars'
 import { AnimatePresence } from 'framer-motion'
 
 function App() {
+  let vh = window.innerHeight * 0.01
+  document.documentElement.style.setProperty('--vh', `${vh}px`)
   const location = useLocation()
   const [show, setShow] = useState<boolean>(true)
   useEffect(() => {
