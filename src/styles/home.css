@@ -41,6 +41,6 @@
 
 @media only screen and (min-height: 300px) {
   .home__container {
-    align-items: flex-end;
+    /* align-items: flex-end; */
   }
 }
