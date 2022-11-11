@@ -6,7 +6,7 @@
 
 .home__container {
   width: 100%;
-  height: calc(100vh - 2rem);
+  max-height: calc(100vh - 2rem);
   padding: 2rem;
 
   display: flex;
