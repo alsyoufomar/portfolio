@@ -9,7 +9,9 @@
 
 .home__container {
   width: 100%;
-  height: calc(100vh - 2rem);
+  /* height: calc(100vh - 2rem); */
+  height: calc((var(--vh, 1vh) * 100) - 2rem);
+
   padding: 2rem;
 
   display: flex;
