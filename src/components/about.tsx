@@ -12,13 +12,13 @@ export const About = () => {
         <div>
           <h2>Skills</h2>
           <p>
-            JavaScript / ReactJS / TypeScript / NodeJS / Express / Redux / HTML
+            JavaScript / ReactJS / MUI / TypeScript / NodeJS / Express / Strapi / Webflow / Figma / Redux / HTML
             / CSS / SQL / Prisma / Git / Agile / TDD / OOP / VScode
           </p>
         </div>
         <div>
           <h2>Basic Experience</h2>
-          <p>Python / Django / C / MongoDB / Bootstrap / AWS S3</p>
+          <p>Python / Django / C / MongoDB / Bootstrap / AWS S3 / Cloudinary</p>
         </div>
         <div>
           <h2>Education</h2>

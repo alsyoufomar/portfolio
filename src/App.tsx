@@ -21,6 +21,13 @@ function App() {
     }, 7000)
   }, [])
 
+  let lightmode = localStorage.getItem("lightmode") === "true";
+
+  if (lightmode) {
+    document.body.classList.add('lightmode')
+  } else {
+    document.body.classList.remove('lightmode')
+  }
   return (
     <div className='App'>
       {show && <Welcome />}

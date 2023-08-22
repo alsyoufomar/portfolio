@@ -7,12 +7,12 @@
 .about__container {
   height: calc((var(--vh, 1vh) * 100) - 2rem);
   width: 100%;
-  padding-left: 50%;
   padding-right: 2rem;
-  padding-top: 15%;
+  padding-left: 50%;
+  padding-top: 30vh;
 
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
 
   overflow-y: scroll;
   -ms-overflow-style: none;
@@ -26,14 +26,34 @@
 }
 
 .about__container div {
-  margin: 1rem;
+  margin-bottom: 2rem;
   line-height: var(--line-height);
 }
 
-@media only screen and (max-width: 720px) {
+.about__container h2 {
+  line-height: 120%;
+  margin-bottom: 0.5rem;
+}
+
+.about__container p {
+  max-width: 40rem;
+}
+
+@media only screen and (max-width: 920px) {
   .about__container {
     height: calc((var(--vh, 1vh) * 100) - 14rem);
     margin-top: 4rem;
-    padding-left: 1rem;
+    /* margin-bottom: 5rem; */
+    padding: 2rem;
+    padding-top: 30vh;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  .about__container {
+    height: calc((var(--vh, 1vh) * 100) - 16rem);
+    margin-top: 6rem;
+    padding: 2rem;
+    padding-top: 30vh;
   }
 }

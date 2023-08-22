@@ -7,12 +7,12 @@
   --ff-sec: 'Raleway', sans-serif;
 
   --fw-thin: 100;
-  --fw-reg: 400;
+  --fw-reg: 500;
   --fw-bold: 700;
 
   --fs-h1: 4rem;
-  --fs-h2: 2rem;
-  --fs-h3: 1.6rem;
+  --fs-h2: 3rem;
+  --fs-h3: 2.2rem;
   --fs-body: 1rem;
   --fs-details: 1rem;
 
@@ -21,62 +21,30 @@
 
   --foreground: var(--clr-dark);
   --background: var(--clr-light);
-
   --bgA: #bcbcbc;
   --bgB: #e9e9e9;
-
   --frame: #e9e9e9aa;
-
   --cover: to top, rgb(217, 217, 217) 0%, rgb(221, 221, 221) 50%,
     rgb(230, 230, 230) 100%;
+
+  --foreground: var(--clr-light);
+  --background: var(--clr-dark);
+  --bgA: #1b2735;
+  --bgB: #090a0f;
+  --frame: #1a1c1eaa;
+  --cover: to top, rgb(15, 20, 29) 0%, rgb(14, 18, 25) 50%, rgb(10, 12, 18) 100%;
 
   --line-height: 1.6;
 }
 
-.darkmode {
-  --foreground: var(--clr-light);
-  --background: var(--clr-dark);
-
-  --bgA: #1b2735;
-  --bgB: #090a0f;
-
-  --frame: #1a1c1eaa;
-
-  --cover: to top, rgb(15, 20, 29) 0%, rgb(14, 18, 25) 50%, rgb(10, 12, 18) 100%;
-}
-
-h1 {
-  font-size: var(--fs-h1);
-  font-weight: var(--fw-thin);
-  color: var(--foreground);
-
-  transition: color 1s ease-in-out;
-}
-h2 {
-  font-size: var(--fs-h2);
-  color: var(--foreground);
-
-  transition: color 1s ease-in-out;
-}
-p {
-  font-size: var(--fs-body);
-  font-weight: var(--fw-bold);
-  color: var(--foreground);
-
-  transition: color 1s ease-in-out;
-}
-
-a {
-  color: var(--foreground);
-  text-decoration: none;
-  font-weight: var(--fw-bold);
-
-  transition: color 1s ease-in-out;
-}
-
-a:hover {
-  color: #808080;
-  transition: color 300ms ease-in-out;
+.lightmode {
+  --foreground: var(--clr-dark);
+  --background: var(--clr-light);
+  --bgA: #bcbcbc;
+  --bgB: #e9e9e9;
+  --frame: #e9e9e9aa;
+  --cover: to top, rgb(217, 217, 217) 0%, rgb(221, 221, 221) 50%,
+    rgb(230, 230, 230) 100%;
 }
 
 h1,
@@ -89,6 +57,50 @@ a {
   letter-spacing: 1px;
 }
 
+h1 {
+  font-size: var(--fs-h1);
+  font-weight: var(--fw-thin);
+  color: var(--foreground);
+
+  transition: color 0.5s ease-in-out;
+}
+h2 {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-reg);
+  color: var(--foreground);
+  letter-spacing: 5px;
+  text-transform: uppercase;
+
+  transition: color 0.5s ease-in-out;
+}
+h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-reg);
+  color: var(--foreground);
+  letter-spacing: 4px;
+
+  transition: color 0.5s ease-in-out;
+}
+p {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-bold);
+  color: var(--foreground);
+
+  transition: color 0.5s ease-in-out;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+  font-weight: var(--fw-bold);
+  transition: color 0.5s ease-in-out;
+}
+
+a:hover {
+  color: #808080;
+  transition: color 250ms ease-in-out;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -97,6 +109,7 @@ body {
     var(--bgA) 0%,
     var(--bgB) 100%
   );
+  /* background-color: var(--bgA); */
   color: var(--foreground);
   font-family: var(--ff-sec);
   line-height: var(--line-height-2);
@@ -106,7 +119,7 @@ body {
   scrollbar-width: none;
   /* overflow-y: hidden; */
 
-  transition: background-color 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 body::-webkit-scrollbar {
@@ -119,7 +132,7 @@ body::-webkit-scrollbar {
   height: 100%;
   border: 1rem solid var(--frame);
 
-  transition: border 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 
   z-index: -1;
 }
@@ -130,7 +143,7 @@ body::-webkit-scrollbar {
   height: 100%;
   padding: 1rem;
 
-  transition: border 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .frame h1 {
@@ -145,7 +158,10 @@ body::-webkit-scrollbar {
 @media only screen and (max-width: 850px) {
   :root {
     --fs-h1: 3rem;
-    --fs-body: 0.9rem;
+    --fs-body: 1rem;
+
+    --fs-h2: 2.4rem;
+    --fs-h3: 2rem;
   }
 }
 @media only screen and (max-width: 500px) {

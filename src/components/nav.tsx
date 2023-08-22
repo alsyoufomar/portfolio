@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 
 export const Nav = () => {
-  const [isDark, setIsDark] = useState(true)
+  let lightmode = localStorage.getItem("lightmode") === "true";
+  const [isLight, setIsDark] = useState(lightmode || false)
 
   const darkMode: any = (): void => {
-    console.log(isDark)
-    setIsDark(!isDark)
-    console.log(isDark)
-    if (isDark) {
-      document.body.classList.add('darkmode')
+    setIsDark(!isLight)
+    localStorage.setItem("lightmode", (!isLight).toString());
+    if (!isLight) {
+      document.body.classList.add('lightmode')
     } else {
-      document.body.classList.remove('darkmode')
+      document.body.classList.remove('lightmode')
     }
   }
   return (

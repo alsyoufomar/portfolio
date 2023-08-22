@@ -30,7 +30,7 @@
   line-height: var(--line-height);
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .home__container {
     justify-content: flex-start;
     padding-bottom: 5rem;
