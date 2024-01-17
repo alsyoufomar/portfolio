@@ -1,9 +1,9 @@
 import exactfitmockup from './assets/Group 38-min.png'
-import exactfitfullpage from './assets/exactfit-fullpage-min.png'
+import exactfitfullpage from './assets/exactfit-fullpage-min (1).jpg'
 import renuuMockup from './assets/renuu-mockup-min.png'
-import renuuFullpage from './assets/renuu-fullpage.png'
-import blogfullhomepage from './assets/alifullhome.png'
-import blogfullblogpage from './assets/alifullblog.png'
+import renuuFullpage from './assets/renuu-fullpage-min.jpg'
+import blogfullhomepage from './assets/alifullhome-min.jpg'
+import blogfullblogpage from './assets/alifullblog-min.jpg'
 import scrapper1 from './assets/scrapper1-min.jpg'
 import scrapper2 from './assets/scrapper2-min.jpg'
 import scrapper3 from './assets/scrapper3-min.jpg'
@@ -43,11 +43,11 @@ export const projects: Project[] = [
     <section>
       <h4>Design Phase</h4>
       <p>
-        In the design phase, ExactFit begins with a wireframe, outlining the main layout and 
-        structure of the website. Clients are actively involved, providing input through 
+        In the design phase, we kicked off with a wireframe, outlining the main layout and 
+        structure of the website. Client is actively involved, providing input through 
         a moodboard that showcases design styles. The chosen color palette reflects neutrality, 
         sophistication, and modernity with #3c4145 as the primary color, #ff8718 as the accent,
-        and #ffffff as the secondary. Fonts, Mulish and Lato, add a minimalist touch, aligning
+        and #eff3f5 as the secondary. Fonts, Mulish and Lato, add a minimalist touch, aligning
         with the overall design ethos.
       </p>
     </section>
@@ -89,7 +89,7 @@ export const projects: Project[] = [
     <section>
       <h4>Color Palette</h4>
       <p>
-        The chosen color palette of #3c4145, #ff8718, and #ffffff aligns with
+        The chosen color palette of #3c4145, #ff8718, and #eff3f5 aligns with
         the business's identity. Neutrality and sophistication (primary color)
         coupled with warmth and energy (accent color) evoke a sense of trust and
         enthusiasm. The minimalist approach avoids unnecessary details,
