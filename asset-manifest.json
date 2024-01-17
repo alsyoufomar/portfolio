@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fec88e88.css",
-    "main.js": "/portfolio/static/js/main.6d387a5d.js",
+    "main.js": "/portfolio/static/js/main.9a85272f.js",
     "static/js/787.8d4efb73.chunk.js": "/portfolio/static/js/787.8d4efb73.chunk.js",
     "static/media/Group 38-min.png": "/portfolio/static/media/Group 38-min.7b727ebf403a1ccafa72.png",
-    "static/media/exactfit-fullpage-min.png": "/portfolio/static/media/exactfit-fullpage-min.0e201082a061ff7c6029.png",
     "static/media/renuu-mockup-min.png": "/portfolio/static/media/renuu-mockup-min.52b97a249dc01f67240a.png",
-    "static/media/renuu-fullpage.png": "/portfolio/static/media/renuu-fullpage.4e2d5a840a1fb56f44da.png",
-    "static/media/alifullhome.png": "/portfolio/static/media/alifullhome.155e24a3b06d4bb9cf7d.png",
-    "static/media/alifullblog.png": "/portfolio/static/media/alifullblog.bc43ebad933b3c98be21.png",
+    "static/media/exactfit-fullpage-min (1).jpg": "/portfolio/static/media/exactfit-fullpage-min (1).3191a3fb35c33de4234b.jpg",
+    "static/media/alifullhome-min.jpg": "/portfolio/static/media/alifullhome-min.4ee90eb09ec80dde9a40.jpg",
+    "static/media/renuu-fullpage-min.jpg": "/portfolio/static/media/renuu-fullpage-min.4bc3a8246c3556d1460f.jpg",
+    "static/media/alifullblog-min.jpg": "/portfolio/static/media/alifullblog-min.5d8f21fd3b06de3fd4b2.jpg",
     "static/media/scrapper4-min.jpg": "/portfolio/static/media/scrapper4-min.31c91eec2a16f07e3ba3.jpg",
     "static/media/scrapper3-min.jpg": "/portfolio/static/media/scrapper3-min.1c1cbd8495f01b1c8922.jpg",
     "static/media/scrapper1-min.jpg": "/portfolio/static/media/scrapper1-min.4d4362de515496a95405.jpg",
     "static/media/scrapper2-min.jpg": "/portfolio/static/media/scrapper2-min.ed4a2468b79efdfc2c89.jpg",
     "index.html": "/portfolio/index.html",
     "main.fec88e88.css.map": "/portfolio/static/css/main.fec88e88.css.map",
-    "main.6d387a5d.js.map": "/portfolio/static/js/main.6d387a5d.js.map",
+    "main.9a85272f.js.map": "/portfolio/static/js/main.9a85272f.js.map",
     "787.8d4efb73.chunk.js.map": "/portfolio/static/js/787.8d4efb73.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fec88e88.css",
-    "static/js/main.6d387a5d.js"
+    "static/js/main.9a85272f.js"
   ]
 }
