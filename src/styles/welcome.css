@@ -30,6 +30,12 @@
   animation: fadeinout 5500ms ease-in-out forwards;
 }
 
+@media only screen and (max-width: 500px) {
+  .welcome h3 {
+    font-size: 1.3rem;
+  }
+}
+
 @-webkit-keyframes fadeinout {
   0% {
     opacity: 0;

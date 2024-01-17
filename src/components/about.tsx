@@ -7,13 +7,15 @@ export const About = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 1 } }}
       exit={{ opacity: 0, transition: { duration: 0.4 } }}
-      className='about'>
-      <div className='about__container'>
+      className="about"
+    >
+      <div className="about__container">
         <div>
           <h2>Skills</h2>
           <p>
-            JavaScript / ReactJS / MUI / TypeScript / NodeJS / Express / Strapi / Webflow / Figma / Redux / HTML
-            / CSS / SQL / Prisma / Git / Agile / TDD / OOP / VScode
+            JavaScript / NextJS / ReactJS / MUI / Tailwind / TypeScript / NodeJS
+            / ExpressJS / Strapi / Webflow / Figma / Redux / HTML / CSS / SQL /
+            Prisma / Git / Agile / TDD / OOP / VScode
           </p>
         </div>
         <div>
@@ -36,9 +38,10 @@ export const About = () => {
             making things simple.
             <br />
             <br />I have experience creating full-stack applications using
-            React, Node.js and PostgreSQL stack. I try to keep up with security
-            and best practices and I am always looking for new things to learn
-            as I like to keep myself busy on a daily basis.
+            NextJS, Strapi, Webflow, React, NodeJS and PostgreSQL stack. I try
+            to keep up with security and best practices and I am always looking
+            for new things to learn as I like to keep myself busy on a daily
+            basis.
           </p>
         </div>
       </div>

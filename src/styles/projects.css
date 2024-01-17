@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.projects a {
+  font-family: var(--ff-sec);
+}
+
 .projects__container {
   height: calc((var(--vh, 1vh) * 100) - 2rem);
   width: 100%;
@@ -66,9 +70,101 @@
   line-height: 80%;
 }
 
-.project a h3:hover {
+.project a h3:hover,
+.details:hover {
   color: gray;
   transition: color 300ms ease-in-out;
+}
+
+.popup-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  width: 60%;
+  height: 60%;
+  background: var(--bgC);
+  border: 1px solid var(--foreground);
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.project-rich-text {
+  padding: 2rem;
+  overflow: auto;
+  overflow-y: auto;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: transparent transparent; /* For Firefox */
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.project-rich-text::-webkit-scrollbar {
+  width: 6px;
+}
+
+.project-rich-text::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.project-rich-text::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.material-symbols-outlined {
+  position: absolute;
+  right: 0;
+  color: var(--foreground);
+  border: 1px solid var(--foreground);
+  background-color: var(--background);
+  margin-top: -1rem;
+  margin-right: -1rem;
+}
+
+.material-symbols-outlined:hover,
+.details:hover {
+  cursor: pointer;
+}
+
+.popup article {
+  margin: 5rem 0;
+}
+
+.popup section {
+  margin: 3rem 0;
+  margin-left: 1rem;
+}
+
+.popup p {
+  margin-left: 1rem;
+}
+
+.popup h3 {
+  border-bottom: 1px solid var(--foreground);
+  padding-bottom: 1rem;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.img-wrapper {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+.popup img {
+  display: block;
+  /* border-bottom: 1px solid var(--foreground); */
+
+  max-width: 100%;
 }
 
 @media only screen and (max-width: 920px) {
@@ -86,6 +182,23 @@
 
   .project {
     margin: 2rem 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .popup {
+    width: 90%;
+    margin: 2rem;
+  }
+
+  .project-rich-text {
+    padding: 1rem;
+  }
+}
+@media only screen and (max-height: 600px) {
+  .popup {
+    margin: 2rem;
+    height: 80%;
   }
 }
 

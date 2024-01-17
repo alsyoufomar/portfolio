@@ -21,7 +21,7 @@ function App() {
     }, 7000)
   }, [])
 
-  let lightmode = localStorage.getItem("lightmode") === "true";
+  let lightmode = localStorage.getItem('lightmode') === 'true'
 
   if (lightmode) {
     document.body.classList.add('lightmode')
@@ -29,24 +29,24 @@ function App() {
     document.body.classList.remove('lightmode')
   }
   return (
-    <div className='App'>
+    <div className="App">
       {show && <Welcome />}
-      <div className='profile'>
-        <div className='frame'>
+      <div className="profile">
+        <div className="frame">
           <h1>Omar Alsyouf</h1>
-          <p>Full Stack Developer</p>
+          <p>Full-Stack Web Developer | UI Designer | Freelancer</p>
           <Stars />
         </div>
       </div>
-      <div className='fake-top'></div>
-      <div className='fake-bottom'></div>
+      <div className="fake-top"></div>
+      <div className="fake-bottom"></div>
       <Nav />
       <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/about' element={<About />} />
-          <Route path='/' element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Home />} />
         </Routes>
       </AnimatePresence>
     </div>

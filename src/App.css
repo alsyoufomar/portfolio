@@ -3,34 +3,28 @@
 }
 
 :root {
-  --ff-primary: 'Inter', sans-serif;
+  --ff-primary: 'Lato', sans-serif;
   --ff-sec: 'Raleway', sans-serif;
 
   --fw-thin: 100;
-  --fw-reg: 500;
+  --fw-reg: 400;
   --fw-bold: 700;
 
   --fs-h1: 4rem;
   --fs-h2: 3rem;
   --fs-h3: 2.2rem;
+  --fs-h4: 1.5rem;
   --fs-body: 1rem;
   --fs-details: 1rem;
 
   --clr-light: #e9e9e9;
   --clr-dark: #1a1c1e;
 
-  --foreground: var(--clr-dark);
-  --background: var(--clr-light);
-  --bgA: #bcbcbc;
-  --bgB: #e9e9e9;
-  --frame: #e9e9e9aa;
-  --cover: to top, rgb(217, 217, 217) 0%, rgb(221, 221, 221) 50%,
-    rgb(230, 230, 230) 100%;
-
   --foreground: var(--clr-light);
   --background: var(--clr-dark);
   --bgA: #1b2735;
   --bgB: #090a0f;
+  --bgC: hsla(210, 33%, 7%, 0.942);
   --frame: #1a1c1eaa;
   --cover: to top, rgb(15, 20, 29) 0%, rgb(14, 18, 25) 50%, rgb(10, 12, 18) 100%;
 
@@ -42,6 +36,7 @@
   --background: var(--clr-light);
   --bgA: #bcbcbc;
   --bgB: #e9e9e9;
+  --bgC: #cbcbcbef;
   --frame: #e9e9e9aa;
   --cover: to top, rgb(217, 217, 217) 0%, rgb(221, 221, 221) 50%,
     rgb(230, 230, 230) 100%;
@@ -50,11 +45,15 @@
 h1,
 h2,
 h3,
+h4,
 p,
 a {
   margin: 0;
   padding: 0;
   letter-spacing: 1px;
+}
+h1 {
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -81,18 +80,40 @@ h3 {
 
   transition: color 0.5s ease-in-out;
 }
-p {
-  font-size: var(--fs-body);
+h4 {
+  font-size: var(--fs-h4);
   font-weight: var(--fw-bold);
   color: var(--foreground);
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
 
   transition: color 0.5s ease-in-out;
+}
+p {
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  color: var(--foreground);
+  font-family: var(--ff-primary);
+
+  transition: color 0.5s ease-in-out;
+}
+
+.em {
+  font-size: var(--fs-details);
+  font-weight: var(--fw-reg);
+  color: var(--foreground);
+  font-family: var(--ff-primary);
+
+  transition: color 0.5s ease-in-out;
+
+  padding-top: 2rem;
 }
 
 a {
   color: var(--foreground);
   text-decoration: none;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-reg);
+  font-family: var(--ff-primary);
   transition: color 0.5s ease-in-out;
 }
 
@@ -152,7 +173,7 @@ body::-webkit-scrollbar {
 
 .frame p {
   font-size: var(--fs-details);
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-reg);
 }
 
 @media only screen and (max-width: 850px) {
@@ -162,14 +183,15 @@ body::-webkit-scrollbar {
 
     --fs-h2: 2.4rem;
     --fs-h3: 2rem;
+    --fs-h4: 1.3rem;
   }
 }
+
 @media only screen and (max-width: 500px) {
   .frame h1 {
     font-size: var(--fs-h1);
   }
 }
-
 @media only screen and (max-height: 600px) {
   html {
     font-size: 15px;

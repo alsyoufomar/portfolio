@@ -25,7 +25,7 @@
 
 .home p {
   width: 11em;
-  font-weight: var(--fw-bold);
+  font-weight: var(--fw-reg);
   font-size: var(--fs-details);
   line-height: var(--line-height);
 }
